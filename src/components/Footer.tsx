@@ -1,4 +1,4 @@
-import redLarva from '@/assets/red-larva.png';
+import redLarva from '@/assets/larva.png';
 
 export const Footer = () => {
   return (

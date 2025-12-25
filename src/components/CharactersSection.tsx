@@ -1,6 +1,6 @@
 import { ScrollAnimation } from './ScrollAnimation';
-import redLarva from '@/assets/red-larva.png';
-import yellowLarva from '@/assets/yellow-larva.png';
+import redLarva from '@/assets/red.jpg';
+import yellowLarva from '@/assets/yellow.jpg';
 
 const characters = [
   {
