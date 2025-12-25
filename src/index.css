@@ -1,0 +1,281 @@
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Comic+Neue:wght@400;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 240 10% 8%;
+    --foreground: 45 100% 95%;
+
+    --card: 240 10% 12%;
+    --card-foreground: 45 100% 95%;
+
+    --popover: 240 10% 12%;
+    --popover-foreground: 45 100% 95%;
+
+    --primary: 0 85% 55%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 45 100% 50%;
+    --secondary-foreground: 240 10% 8%;
+
+    --muted: 240 10% 18%;
+    --muted-foreground: 45 30% 70%;
+
+    --accent: 280 80% 60%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 45 50% 30%;
+    --input: 240 10% 18%;
+    --ring: 45 100% 50%;
+
+    --radius: 1rem;
+
+    /* Custom LARVA colors */
+    --larva-red: 0 85% 55%;
+    --larva-red-dark: 0 85% 40%;
+    --larva-yellow: 45 100% 50%;
+    --larva-yellow-dark: 45 100% 40%;
+    --larva-green: 120 60% 45%;
+    --larva-purple: 280 80% 60%;
+    --larva-orange: 25 100% 55%;
+
+    /* Gradients */
+    --gradient-chaos: linear-gradient(135deg, hsl(var(--larva-red)) 0%, hsl(var(--larva-orange)) 50%, hsl(var(--larva-yellow)) 100%);
+    --gradient-red: linear-gradient(180deg, hsl(var(--larva-red)) 0%, hsl(var(--larva-red-dark)) 100%);
+    --gradient-yellow: linear-gradient(180deg, hsl(var(--larva-yellow)) 0%, hsl(var(--larva-yellow-dark)) 100%);
+
+    /* Shadows */
+    --shadow-cartoon: 4px 4px 0px hsl(240 10% 5%);
+    --shadow-glow-red: 0 0 30px hsl(var(--larva-red) / 0.5);
+    --shadow-glow-yellow: 0 0 30px hsl(var(--larva-yellow) / 0.5);
+
+    --sidebar-background: 240 10% 8%;
+    --sidebar-foreground: 45 100% 95%;
+    --sidebar-primary: 0 85% 55%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 10% 18%;
+    --sidebar-accent-foreground: 45 100% 95%;
+    --sidebar-border: 45 50% 30%;
+    --sidebar-ring: 45 100% 50%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'Comic Neue', cursive;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 0.05em;
+  }
+}
+
+@layer components {
+  .cartoon-border {
+    @apply border-4 border-foreground rounded-2xl;
+    box-shadow: var(--shadow-cartoon);
+  }
+
+  .sticker {
+    @apply relative inline-block;
+    filter: drop-shadow(3px 3px 0px hsl(240 10% 5%));
+  }
+
+  .gradient-text-chaos {
+    background: var(--gradient-chaos);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+}
+
+@layer utilities {
+  /* Float animation */
+  .animate-float {
+    animation: float 3s ease-in-out infinite;
+  }
+
+  .animate-float-delayed {
+    animation: float 3s ease-in-out infinite;
+    animation-delay: 1.5s;
+  }
+
+  /* Bounce animation */
+  .animate-bounce-slow {
+    animation: bounce-slow 2s ease-in-out infinite;
+  }
+
+  /* Wiggle animation */
+  .animate-wiggle {
+    animation: wiggle 2.5s ease-in-out infinite;
+  }
+
+  /* Pop animation */
+  .animate-pop {
+    animation: pop 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+
+  /* Shake animation */
+  .animate-shake {
+    animation: shake 0.5s ease-in-out;
+  }
+
+  /* Pulse glow */
+  .animate-glow-pulse {
+    animation: glow-pulse 2s ease-in-out infinite;
+  }
+
+  /* Scroll entrance animations */
+  .animate-fade-up {
+    animation: fade-up 0.6s ease-out forwards;
+  }
+
+  .animate-slide-left {
+    animation: slide-left 0.6s ease-out forwards;
+  }
+
+  .animate-slide-right {
+    animation: slide-right 0.6s ease-out forwards;
+  }
+
+  .animate-scale-in {
+    animation: scale-in 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55) forwards;
+  }
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+@keyframes bounce-slow {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes wiggle {
+  0%, 100% {
+    transform: rotate(-3deg);
+  }
+  50% {
+    transform: rotate(3deg);
+  }
+}
+
+@keyframes pop {
+  0% {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes shake {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-5px) rotate(-2deg);
+  }
+  75% {
+    transform: translateX(5px) rotate(2deg);
+  }
+}
+
+@keyframes glow-pulse {
+  0%, 100% {
+    box-shadow: 0 0 20px hsl(var(--larva-yellow) / 0.3);
+  }
+  50% {
+    box-shadow: 0 0 40px hsl(var(--larva-yellow) / 0.6);
+  }
+}
+
+@keyframes fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slide-left {
+  from {
+    opacity: 0;
+    transform: translateX(-60px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slide-right {
+  from {
+    opacity: 0;
+    transform: translateX(60px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes scale-in {
+  from {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: hsl(var(--background));
+}
+
+::-webkit-scrollbar-thumb {
+  background: hsl(var(--larva-red));
+  border-radius: 6px;
+  border: 2px solid hsl(var(--background));
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: hsl(var(--larva-yellow));
+}
