@@ -1,5 +1,5 @@
 import redLarva from '@/assets/red11.png';
-import yellowLarva from '@/assets/yellow11.png';
+import yellowLarva from '@/assets/yellows.png';
 import heroBg from '@/assets/hero-bg.png';
 import { ScrollAnimation } from './ScrollAnimation';
 
