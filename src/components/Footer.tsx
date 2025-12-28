@@ -27,8 +27,9 @@ export const Footer = () => {
           {/* Disclaimer */}
           <div className="bg-muted/50 rounded-xl px-6 py-4 mb-6 max-w-2xl">
             <p className="font-comic text-sm text-muted-foreground">
-              ⚠️ $LARVA is a meme token with no intrinsic value or expectation of financial return. 
-              This is not financial advice. Always DYOR. We're literally just cartoon bugs.
+              ⚠️ This meme coin is not affiliated with, endorsed by, or associated with LARVA by TUBA Entertainment or any official representatives of the LARVA brand. <br></br>It is purely a fan token and a community experiment. Please do your own research before participating. Meme coins are highly speculative and volatile assets with no intrinsic value.
+$LARVA is a meme token with no expectation of financial return.<br></br> This is not financial advice. Always DYOR. We're literally just cartoon bugs.
+              
             </p>
           </div>
 
