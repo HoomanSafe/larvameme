@@ -66,9 +66,8 @@ export const AboutSection = () => {
           <div className="mt-16 text-center">
             <div className="inline-block bg-muted border-4 border-dashed border-foreground/30 rounded-2xl p-6 max-w-2xl">
               <p className="font-comic text-muted-foreground text-lg">
-                ⚠️ <strong>Disclaimer:</strong> If you're expecting utility, you're in the wrong 
-                sewer. $LARVA is a meme coin with zero promises except chaos and good times. 
-                DYOR. NFA. We're literally bugs.
+                ⚠️ <strong>Disclaimer:</strong> This meme coin is not affiliated with, endorsed by, or associated with LARVA by TUBA Entertainment or any official representatives of the LARVA brand. <br></br>It is purely a fan token and a community experiment. Please do your own research before participating. Meme coins are highly speculative and volatile assets with no intrinsic value.
+$LARVA is a meme token with no expectation of financial return.<br></br> This is not financial advice. Always DYOR. We're literally just cartoon bugs.
               </p>
             </div>
           </div>
