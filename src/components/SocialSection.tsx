@@ -5,7 +5,7 @@ const socialLinks = [
   { 
     name: "X (Twitter)", 
     icon: Twitter, 
-    href: "#", 
+    href: "https://x.com/LarvaTheMeme", 
     color: "bg-foreground text-background hover:bg-larva-red hover:text-primary-foreground",
     emoji: "🐦"
   },
