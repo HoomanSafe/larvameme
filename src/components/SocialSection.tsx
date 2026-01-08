@@ -12,7 +12,7 @@ const socialLinks = [
   { 
     name: "Telegram", 
     icon: Send, 
-    href: "#", 
+    href: "https://t.me/Larvamemechannel", 
     color: "bg-[#0088cc] text-primary-foreground hover:bg-[#006da3]",
     emoji: "✈️"
   },
