@@ -8,14 +8,14 @@ const socialLinks = [
     href: "https://x.com/LarvaTheMeme", 
     color: "bg-foreground text-background hover:bg-larva-red hover:text-primary-foreground",
     emoji: "🐦"
-  },
+  }/*,
   { 
     name: "Telegram", 
     icon: Send, 
     href: "https://t.me/Larvamemechannel", 
     color: "bg-[#0088cc] text-primary-foreground hover:bg-[#006da3]",
     emoji: "✈️"
-  },
+  }*/,
 ];
 
 export const SocialSection = () => {
