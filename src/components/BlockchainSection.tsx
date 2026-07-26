@@ -31,11 +31,11 @@ export const BlockchainSection = () => {
               ON-CHAIN 🔗
             </span>
             <h2 className="font-bangers text-4xl md:text-6xl lg:text-7xl text-foreground mb-4">
-              Built on <span className="text-larva-purple">Solana</span>
+              Built on <span className="text-larva-purple">RobinHood</span>
             </h2>
             <p className="font-comic text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto">
               Fast, cheap, and chaotic — just like our two braincell-sharing larvae.
-              $LARVA lives on the Solana blockchain. ⚡
+              $LARVA lives on the RobinHood blockchain. ⚡
             </p>
           </div>
         </ScrollAnimation>

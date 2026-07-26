@@ -76,7 +76,7 @@ export const HeroSection = () => {
 
           <ScrollAnimation animation="fade-up" delay={800}>
             <p className="font-comic text-lg md:text-xl lg:text-2xl text-muted-foreground mb-8 max-w-2xl">
-              A cartoon-level accident on Solana. 🐛💥
+              A cartoon-level accident on RobinHood. 🐛💥
             </p>
           </ScrollAnimation>
 

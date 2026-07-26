@@ -28,7 +28,7 @@ export const AboutSection = () => {
             </h2>
             <p className="font-comic text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto">
               Two cartoon larvae discovered crypto, ate too many leaves, and accidentally 
-              launched a meme coin. Now they're on Solana causing havoc. This is not 
+              launched a meme coin. Now they're on RobinHood causing havoc. This is not 
               financial advice — it's a comedy sketch that somehow ended up on the blockchain.
             </p>
           </div>

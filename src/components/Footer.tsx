@@ -35,7 +35,7 @@ $LARVA is a meme token with no expectation of financial return.<br></br> This is
 
           {/* Copyright */}
           <p className="font-comic text-muted-foreground">
-            © {new Date().getFullYear()} $LARVA on Solana. All chaos reserved.
+            © {new Date().getFullYear()} $LARVA on RobinHood. All chaos reserved.
           </p>
         </div>
       </div>

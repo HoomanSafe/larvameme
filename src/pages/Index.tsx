@@ -9,7 +9,7 @@ const Index = () => {
   return (
     <main className="min-h-screen bg-background overflow-x-hidden">
       {/* Meta info for SEO */}
-      <title>$LARVA - Two Bugs, Zero Brains, Infinite Vibes | Solana Meme Coin</title>
+      <title>$LARVA - Two Bugs, Zero Brains, Infinite Vibes | RobinHood Meme Coin</title>
       
       <HeroSection />
       <AboutSection />
